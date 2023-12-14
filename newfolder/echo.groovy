@@ -4,7 +4,7 @@ procedure 'echo', {
   timeLimit = '0'
 
   step 'echo', {
-    command = 'echo "Hello World"'
+    command = 'echo "Hello World1"'
     timeLimit = '0'
     timeLimitUnits = 'seconds'
   }
