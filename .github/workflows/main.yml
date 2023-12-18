@@ -3,7 +3,7 @@ name: Simple Curl Check
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   curl-check:
