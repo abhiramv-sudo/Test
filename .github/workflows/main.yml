@@ -1,0 +1,15 @@
+name: Simple Curl Check
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  curl-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run curl command
+      run: |
+        curl -X POST "https://engcdrodev.cisco.com/rest/v1.0/pipelines?pipelineName=Test_Pipeline_App_Deploy&projectName=CPXE" -H "accept: application/json" -d '{"actualParameter":[{"actualParameterName":"github_actions_id","value":"899635667-58-85"},{"actualParameterName":"github_repo_name","value":"cloudbees-pipeline-flow-test"},{"actualParameterName":"github_pull_request","value":"7"},{"actualParameterName":"jfrog_cred","value":"CPXE_Jfrog_Artifactory_Creds"},{"actualParameterName":"github_branch","value":"smarsave/dyndb-update"}]}' -u "ranjithk:changeme"
