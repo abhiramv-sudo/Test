@@ -4,7 +4,7 @@ procedure 'SyncTest', {
   timeLimit = '0'
 
   step 'TestSync', {
-    command = 'echo "Sync the webhook"'
+    command = 'echo "Sync the webhook123"'
     procedureName = 'SyncTest'
     timeLimit = '0'
     timeLimitUnits = 'seconds'
