@@ -4,7 +4,7 @@ procedure 'SyncTest', {
   timeLimit = '0'
 
   step 'TestSync', {
-    command = 'echo "Hello World 12345567444448787878799999"'
+    command = 'echo "TestSync123"'
     procedureName = 'SyncTest'
     timeLimit = '0'
     timeLimitUnits = 'seconds'
